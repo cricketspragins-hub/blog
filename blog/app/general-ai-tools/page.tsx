@@ -7,8 +7,8 @@ export const metadata = {
 
 export default function GeneralAIToolsPage() {
   return (
-    <div className="animate-fade-in mx-auto max-w-4xl px-6 pb-16">
-      <section className="pt-6 md:pt-8 pb-0">
+    <div className="animate-fade-in mx-auto max-w-4xl px-6 pb-12">
+      <section className="pt-4 md:pt-6 pb-0">
         <header className="mb-6">
           <h1 className="font-serif text-4xl text-sage-dark font-bold">
             General AI <span className="text-sage-dark">Tools</span>
@@ -19,7 +19,7 @@ export default function GeneralAIToolsPage() {
         </header>
       </section>
 
-      <section className="py-16 md:py-24 space-y-3 text-sage-dark text-lg leading-relaxed">
+      <section className="py-10 md:py-14 space-y-3 text-sage-dark text-lg leading-relaxed">
         <p>
           That's the question I kept asking myself when I started. Gemini, NotebookLM, Gems, Deep Research — they're all 'AI tools' but they do very different things. After taking several courses and experimenting on real work tasks, I started to develop a mental model for when to reach for which one.
         </p>
@@ -28,7 +28,7 @@ export default function GeneralAIToolsPage() {
         </p>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="font-subhead text-2xl text-sage mb-3">Course Reviews</div>
         <CourseCard
           title="Course Name Here"

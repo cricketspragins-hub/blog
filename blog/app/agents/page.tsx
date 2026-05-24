@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function AgentsPage() {
   return (
-    <div className="animate-fade-in mx-auto max-w-4xl px-6 pb-16">
-      <section className="pt-6 md:pt-8 pb-0">
+    <div className="animate-fade-in mx-auto max-w-4xl px-6 pb-12">
+      <section className="pt-4 md:pt-6 pb-0">
         <header className="mb-6">
           <h1 className="font-serif text-4xl text-sage-dark font-bold">
             <span className="text-sage-dark">Agents</span>
@@ -20,7 +20,7 @@ export default function AgentsPage() {
         </header>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <h2 className="font-serif text-3xl text-sage-dark font-bold">Three questions I needed answered before anything else</h2>
         <p className="mt-3 text-sage-dark leading-relaxed text-lg">
           When I started hearing about 'agentic AI' I had the same reaction most people have: vague curiosity mixed with mild panic. So before I dive into course reviews, here's where I landed on my three core questions:
@@ -56,7 +56,7 @@ export default function AgentsPage() {
         </Link>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="font-subhead text-2xl text-sage mb-6">Course Reviews</div>
         <CourseCard
           title="Course Name Here"

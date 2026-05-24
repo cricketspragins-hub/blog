@@ -74,8 +74,8 @@ export const metadata = {
 
 export default function RealWorldPage() {
   return (
-    <div className="animate-fade-in mx-auto max-w-4xl px-6 pb-16">
-      <section className="pt-6 md:pt-8 pb-0">
+    <div className="animate-fade-in mx-auto max-w-4xl px-6 pb-12">
+      <section className="pt-4 md:pt-6 pb-0">
         <header className="mb-6">
           <h1 className="font-serif text-4xl text-sage-dark font-bold">
             AI in the Real <span className="text-sage-dark">World</span>
@@ -86,7 +86,7 @@ export default function RealWorldPage() {
         </header>
       </section>
 
-      <section className="py-16 md:py-24 space-y-3 text-sage-dark text-lg leading-relaxed">
+      <section className="py-10 md:py-14 space-y-3 text-sage-dark text-lg leading-relaxed">
         <p>
           Learning AI tools is one thing. Using them to do real work faster and better is another. This section documents exactly that — using a real task I do regularly as a before-and-after case study.
         </p>
@@ -95,7 +95,7 @@ export default function RealWorldPage() {
         </p>
       </section>
 
-      <section className="py-16 md:py-24 space-y-4">
+      <section className="py-10 md:py-14 space-y-4">
         {stages.map((stage) => (
           <div
             key={stage.stage}
@@ -137,7 +137,7 @@ export default function RealWorldPage() {
         ))}
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <h2 className="font-subhead text-2xl text-sage">Why this matters</h2>
         <div className="mt-4 space-y-4 text-sage-dark/75 text-lg leading-relaxed">
           <p>

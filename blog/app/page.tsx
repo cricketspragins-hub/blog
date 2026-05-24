@@ -16,8 +16,11 @@ export default function Home() {
           </p>
           <header className="mb-6">
             <h1 className="font-serif text-6xl md:text-7xl font-bold leading-tight tracking-tight mt-0 text-sage-dark">
-              My AI Journey — Documented So You Don't Have To Start From <span className="text-sage-dark">Scratch</span>
+              Why this blog <span className="text-sage-dark"></span>exists
             </h1>
+            <h2 className="font-serif text-4xl font-bold leading-tight tracking-tight text-sage-dark">
+              My AI Journey — Documented So You Don't Have To Start From <span className="text-sage-dark">Scratch</span>
+            </h2>
           </header>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-sage-dark">
             Real reviews from a real learner — so you can skip the guesswork and choose the right AI learning path for your work.
@@ -26,7 +29,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/general-ai-tools"
-              className="inline-flex items-center justify-center rounded-full bg-sage-dark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
+              className="inline-flex items-center justify-center rounded-full bg-sage-dark px-6 py-3 text-sm font-medium text-sage-dark transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
             >
               Browse Reviews →
             </Link>
