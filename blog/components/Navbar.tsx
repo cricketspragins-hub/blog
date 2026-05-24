@@ -16,42 +16,50 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-cream border-b border-border">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-headline text-ink text-xl">
-          My AI Journey
-        </Link>
+    <header className="sticky top-0 z-50 bg-[#E8EDE4] overflow-hidden" style={{ willChange: "auto" }}>
+      <div className="mx-auto flex max-w-4xl flex-col gap-4 px-6 py-3">
+        <div className="flex items-baseline gap-0">
+          <span className="font-headline font-bold text-sage-dark text-xl">
+            Cricket's AI Journey
+          </span>
+          <span className="font-subhead text-sage text-lg italic ml-2">
+            — embracing AI, one honest review at a time
+          </span>
+        </div>
 
-        <button
-          type="button"
-          className="md:hidden rounded-md border border-border bg-white/80 px-3 py-2 text-sm font-semibold text-ink shadow-sm"
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((prev) => !prev)}
-        >
-          {menuOpen ? "Close" : "Menu"}
-        </button>
+        <div className="pb-2">
+          <div className="flex items-center justify-between gap-4">
+            <nav aria-label="Main navigation" className="hidden gap-6 md:flex">
+              {links.map((link) => {
+                const active = pathname === link.href;
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    aria-current={active ? "page" : undefined}
+                    className="text-ink/70 text-sm tracking-normal transition hover:text-sage-dark focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </nav>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {links.map((link) => {
-            const active = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={
-                  `text-ink transition hover:text-sage ` +
-                  (active ? "underline decoration-sage font-semibold" : "")
-                }
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
+            <button
+              type="button"
+              aria-expanded={menuOpen}
+              aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+              className="md:hidden rounded-md border border-[#B2C9B4] bg-[#E8EDE4] px-3 py-2 text-sm text-ink/70 focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
+              onClick={() => setMenuOpen((prev) => !prev)}
+            >
+              {menuOpen ? "✕ Close" : "☰ Menu"}
+            </button>
+          </div>
+        </div>
       </div>
 
       {menuOpen ? (
-        <nav className="border-t border-border bg-cream px-6 py-4 md:hidden">
+        <nav aria-label="Main navigation" className="w-full border-b border-[#B2C9B4] bg-[#E8EDE4] px-6 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {links.map((link) => {
               const active = pathname === link.href;
@@ -59,10 +67,8 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={
-                    `block text-ink transition hover:text-sage ` +
-                    (active ? "underline decoration-sage font-semibold" : "")
-                  }
+                  aria-current={active ? "page" : undefined}
+                  className="block text-ink/70 text-sm tracking-normal transition hover:text-sage-dark focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

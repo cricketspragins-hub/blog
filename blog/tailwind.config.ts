@@ -5,20 +5,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#F8F5F0",
-        ink: "#2C2C2C",
+        cream: "#E8EDE4",
+        ink: "#2C3A2C",
         sage: {
           light: "#B2C9B4",
           DEFAULT: "#7C9A7E",
           dark: "#4A6741",
         },
-        card: "#FFFFFF",
-        border: "#E0E8E0",
+        card: "transparent",
+        border: "#B2C9B4",
       },
       fontFamily: {
         headline: ["var(--font-headline)"],
         subhead: ["var(--font-subhead)"],
         body: ["var(--font-body)"],
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(12px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.4s ease-out both",
       },
     },
   },

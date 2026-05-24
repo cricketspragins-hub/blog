@@ -7,9 +7,13 @@
 }
 
 body {
-  background: #F8F5F0;
-  color: #2C2C2C;
+  background: #E8EDE4;
+  color: #2C3A2C;
   font-family: var(--font-body);
   line-height: 1.7;
   scroll-behavior: smooth;
+}
+
+p, li, dd {
+  color: #4A5A4A;
 }

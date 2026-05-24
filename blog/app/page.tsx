@@ -1,65 +1,132 @@
-import Image from "next/image";
+import Link from "next/link";
+
+export const metadata = {
+  title: "My AI Journey | Real AI Course Reviews",
+  description: "Real AI course reviews with practical takeaways, honest recommendations, and learning notes.",
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To begin your journey in the world of web development, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="animate-fade-in space-y-20">
+      <section className="pt-8 md:pt-12 pb-0 text-center">
+        <div className="mx-auto max-w-4xl px-6">
+          <p className="inline-flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-widest text-sage">
+            <span>✨</span>
+            <span>LEARNING IN PUBLIC</span>
+          </p>
+          <header className="mb-6">
+            <h1 className="font-headline text-6xl md:text-7xl font-bold leading-tight tracking-tight mt-6 text-ink">
+              My AI Journey — Documented So You Don't Have To Start From <span className="text-sage">Scratch</span>
+            </h1>
+          </header>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink/75">
+            Real reviews from a real learner — so you can skip the guesswork and choose the right AI learning path for your work.
+          </p>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              href="/general-ai-tools"
+              className="inline-flex items-center justify-center rounded-full bg-sage-dark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Browse Reviews →
+            </Link>
+            <Link
+              href="/ai-in-the-real-world"
+              className="inline-flex items-center justify-center rounded-full border border-ink/30 bg-transparent px-6 py-3 text-sm font-medium text-ink transition hover:border-ink/60 focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
             >
-              Learning
-            </a>{" "}
-            center.
+              See the Real-World Story →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <h2 className="font-headline text-3xl text-ink font-bold">Why This Exists</h2>
+        <div className="mt-6 space-y-4 text-ink/75">
+          <p>
+            Every time I completed a course or posted a certificate on LinkedIn, the same questions came up in my DMs and over coffee:
+          </p>
+          <p className="text-sage">'Was it worth it?' 'Is it too technical?' 'Should I take that one?'</p>
+          <p>
+            So I decided to just write it all down. This is my running log of every AI course I've taken — what I learned, what surprised me, and most importantly, whether I'd recommend it to someone like me.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <h3 className="font-subhead text-2xl text-sage">Who 'Someone Like Me' Is</h3>
+        <div className="mt-4 space-y-4 text-ink/75 text-sm">
+          <p>Before you trust my take, you should know where I'm coming from:</p>
+          <ul className="list-disc list-inside marker:text-sage space-y-2 text-ink/75">
+            <li>I know Python — not an expert, but I can read and run it</li>
+            <li>I've built advanced models in Excel for years</li>
+            <li>I use Tableau and Alteryx regularly</li>
+            <li>My workplace runs on Google — I'm comfortable with Workspace, Gemini, and Google's AI tools</li>
+            <li>This site was built using vibe coding — AI-assisted development. No traditional web development background required.</li>
+          </ul>
+          <p>If that sounds like you, my assessments are probably well-calibrated for your starting point.</p>
         </div>
-      </main>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <h2 className="font-headline text-3xl text-ink font-bold">One Question Drives Every Review</h2>
+        <p className="font-subhead text-3xl text-sage text-center py-6 italic">
+          Is this course worth your time — and money?
+        </p>
+        <p className="text-ink/75 text-lg leading-relaxed">
+          Nothing more, nothing less. I'm not here to summarize the syllabus. I'm here to tell you what it felt like to sit through it, what actually stuck, and whether I'd do it again.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <h2 className="font-headline text-3xl text-ink font-bold">What You'll Find Here</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="bg-card border border-[#B2C9B4] rounded-lg p-6 border-l-4 border-l-[#4A6741] hover:-translate-y-0.5 transition-transform hover:border-l-[#7C9A7E] transition-colors">
+            <h3 className="font-headline text-xl text-ink">General AI Tools</h3>
+            <p className="mt-4 text-ink/75 text-sm">
+              Courses on the tools reshaping how we work — and which one to reach for when.
+            </p>
+            <Link
+              href="/general-ai-tools"
+              className="mt-4 inline-block rounded-full bg-sage-dark px-4 py-2 text-sm font-medium text-white transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
+            >
+              See Reviews →
+            </Link>
+          </div>
+
+          <div className="bg-card border border-[#B2C9B4] rounded-lg p-6 border-l-4 border-l-[#4A6741] hover:-translate-y-0.5 transition-transform hover:border-l-[#7C9A7E] transition-colors">
+            <h3 className="font-headline text-xl text-ink">Agents</h3>
+            <p className="mt-4 text-ink/75 text-sm">
+              What agentic AI actually is, whether you need it, and what's worth learning.
+            </p>
+            <Link
+              href="/agents"
+              className="mt-4 inline-block rounded-full bg-sage-dark px-4 py-2 text-sm font-medium text-white transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
+            >
+              See Reviews →
+            </Link>
+          </div>
+
+          <div className="bg-card border border-[#B2C9B4] rounded-lg p-6 border-l-4 border-l-[#4A6741] hover:-translate-y-0.5 transition-transform hover:border-l-[#7C9A7E] transition-colors">
+            <h3 className="font-headline text-xl text-ink">AI in the Real <span className="text-sage">World</span></h3>
+            <p className="mt-4 text-ink/75 text-sm">
+              How everything I've learned is changing the way I do real work. Spoiler: I used to spend a full week on market analysis. That's changing fast.
+            </p>
+            <Link
+              href="/ai-in-the-real-world"
+              className="mt-4 inline-block rounded-full bg-sage-dark px-4 py-2 text-sm font-medium text-white transition hover:bg-sage focus-visible:ring-2 focus-visible:ring-sage focus-visible:outline-none"
+            >
+              See It →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <p className="text-center italic text-sm text-ink/60 mt-16">
+          This is a living document. I'm still learning. New reviews drop every couple of weeks, roughly in sync with my LinkedIn updates. If you've ever asked me 'what are you taking now?' — this page is my answer.
+        </p>
+      </section>
     </div>
   );
 }
