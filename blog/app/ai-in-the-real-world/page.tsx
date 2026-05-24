@@ -31,22 +31,22 @@ const stages: TamStage[] = [
   },
   {
     stage: 3,
-    title: "Intermediate AI",
-    tools: "Deep Research + NotebookLM",
+    title: "Intermediate AI (where I am today)",
+    tools: "Deep Research, NotebookLM, Gems, Workspace App Scripts",
     time: "1-2 days",
     quality: "More refined, better synthesis",
     whatChanged:
-      "NotebookLM helps synthesize large documents and surface insights I would have missed.",
-    comingSoon: true,
+      "I know when to reach for which tool. I've built a prompt inventory I actually reuse. I work across multiple LLMs and iterate — layering in new data, asking the model to walk through its reasoning, and refining from there.",
+    comingSoon: false,
   },
   {
     stage: 4,
     title: "Advanced AI",
-    tools: "+ RAG (Retrieval Augmented Generation)",
+    tools: "An early agent for TAM construction + RAG (Retrieval Augmented Generation)",
     time: "Hours",
     quality: "Higher precision, domain-specific",
     whatChanged:
-      "Bringing in proprietary data and domain knowledge lifts the output quality significantly.",
+      "I hand off the searching and initial TAM construction to a tool. I come in at the synthesis and judgment layer — which is where a strategist should be spending their time anyway.",
     comingSoon: true,
   },
   {
@@ -78,20 +78,17 @@ export default function RealWorldPage() {
       <section className="pt-4 md:pt-6 pb-0">
         <header className="mb-6">
           <h1 className="font-serif text-4xl text-sage-dark font-bold">
-            AI in the Real <span className="text-sage-dark">World</span>
+            AI Applied: From Tools to Outputs
           </h1>
-          <p className="font-hand text-2xl text-sage mt-1">
-            How this changes actual work — not just what you know
-          </p>
         </header>
       </section>
 
       <section className="py-10 md:py-14 space-y-3 text-sage-dark text-lg leading-relaxed">
         <p>
-          Learning AI tools is one thing. Using them to do real work faster and better is another. This section documents exactly that — using a real task I do regularly as a before-and-after case study.
+          I'm starting to see how agents could change how I build strategy. Most decks have 4-7 core slides. I think an agent could own at least two: the TAM and the Competitive Landscape.
         </p>
         <p>
-          The task: building a TAM (Total Addressable Market analysis) for a new business opportunity. It used to take me a week. Here's how that's changing.
+          What follows is a before-and-after progression that mirrors my actual learning — not where I plan to be, but where I've been, where I am, and where I can now see myself going.
         </p>
       </section>
 
