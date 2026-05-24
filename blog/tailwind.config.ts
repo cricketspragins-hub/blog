@@ -5,20 +5,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#E8EDE4",
-        ink: "#2C3A2C",
-        sage: {
-          light: "#B2C9B4",
-          DEFAULT: "#7C9A7E",
-          dark: "#4A6741",
+        background: "oklch(0.94 0.02 145)",
+        ink: {
+          DEFAULT: "oklch(0.28 0.02 145)",
+          muted: "oklch(0.45 0.02 145)",
         },
-        card: "transparent",
-        border: "#B2C9B4",
+        sage: {
+          light: "oklch(0.88 0.04 145)",
+          DEFAULT: "oklch(0.62 0.07 145)",
+          dark: "oklch(0.42 0.07 145)",
+        },
+        card: "oklch(0.94 0.02 145)",
+        border: "oklch(0.84 0.03 145)",
       },
       fontFamily: {
-        headline: ["var(--font-headline)"],
-        subhead: ["var(--font-subhead)"],
-        body: ["var(--font-body)"],
+        sans: ["var(--font-sans)"],
+        serif: ["var(--font-serif)"],
+        hand: ["var(--font-hand)"],
       },
       keyframes: {
         "fade-in": {

@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Caveat, Inter, Playfair_Display } from "next/font/google";
+import { Caveat, Inter, DM_Serif_Display } from "next/font/google";
 import PageLayout from "../components/PageLayout";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-headline",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const caveat = Caveat({
-  variable: "--font-subhead",
+const dmSerif = DM_Serif_Display({
+  variable: "--font-serif",
   subsets: ["latin"],
   weight: ["400"],
 });
 
+const caveat = Caveat({
+  variable: "--font-hand",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 const inter = Inter({
-  variable: "--font-body",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -33,9 +33,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfairDisplay.variable} ${caveat.variable} ${inter.variable} h-full antialiased`}
+      className={`${dmSerif.variable} ${caveat.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-background text-sage-dark font-sans">
         <PageLayout>{children}</PageLayout>
       </body>
     </html>
